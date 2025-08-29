@@ -48,5 +48,22 @@ Our system provides **multi-layered detection, fraud prevention, and actionable 
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/Van1841/SurakshaCheck_final.git
-   cd fake-banking-apk-detection
+   git clone https://github.com/Van1841/FINAL_SURAKSHACHECK.git
+   cd the file
+2. **Run the program**
+   npm i
+   npm run dev
+
+
+## 📈 Future Enhancements  
+
+- ✅ Integration with **Play Store APIs** for real-time app verification.  
+- ✅ **Machine Learning models** for adaptive fraud detection.  
+- ✅ Cross-platform **mobile app** for end-users.  
+
+---
+
+## 👨‍💻 Team Encryption  
+
+*Developed with ❤️ to secure the digital banking ecosystem.*  
+
