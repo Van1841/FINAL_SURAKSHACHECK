@@ -65,5 +65,5 @@ Our system provides **multi-layered detection, fraud prevention, and actionable 
 
 ## 👨‍💻 Team Encryption  
 
-*Developed with ❤️ to secure the digital banking ecosystem.*  
+*A project for CyberShield Hackathon*  
 
