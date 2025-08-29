@@ -1,0 +1,212 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SurakshaCheck Design System - Security-focused color palette and components */
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --brand-primary: 217 91% 60%; /* Deep Blue */
+    --brand-secondary: 193 95% 68%; /* Cyan */
+    --brand-accent: 36 100% 69%; /* Amber */
+    
+    /* Security Status Colors */
+    --security-safe: 142 76% 36%; /* Green */
+    --security-warning: 35 100% 50%; /* Orange */
+    --security-danger: 0 84% 60%; /* Red */
+    --security-info: 217 91% 60%; /* Blue */
+    
+    /* Background System */
+    --background: 220 26% 14%; /* Dark Navy */
+    --background-secondary: 220 23% 18%; /* Lighter Navy */
+    --background-card: 220 20% 20%; /* Card Background */
+    --background-accent: 220 16% 22%; /* Accent Background */
+    
+    /* Text Colors */
+    --foreground: 210 40% 98%; /* White */
+    --foreground-muted: 215 20% 65%; /* Light Gray */
+    --foreground-subtle: 215 16% 47%; /* Darker Gray */
+    
+    /* Border & Input */
+    --border: 217 32% 28%; /* Border Color */
+    --input: 217 32% 24%; /* Input Background */
+    --ring: 217 91% 60%; /* Focus Ring */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(193 95% 68%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%) 0%, hsl(15 100% 55%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(158 64% 52%) 100%);
+    
+    /* Component Specific */
+    --card: var(--background-card);
+    --card-foreground: var(--foreground);
+    --popover: var(--background-card);
+    --popover-foreground: var(--foreground);
+    --primary: var(--brand-primary);
+    --primary-foreground: var(--foreground);
+    --secondary: var(--background-secondary);
+    --secondary-foreground: var(--foreground);
+    --muted: var(--background-accent);
+    --muted-foreground: var(--foreground-muted);
+    --accent: var(--background-accent);
+    --accent-foreground: var(--foreground);
+    --destructive: var(--security-danger);
+    --destructive-foreground: var(--foreground);
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(217 91% 60% / 0.1) 0%, transparent 25%),
+      radial-gradient(circle at 75% 75%, hsl(193 95% 68% / 0.08) 0%, transparent 25%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Hero Section */
+  .hero-gradient {
+    background: var(--gradient-primary);
+  }
+  
+  .hero-title {
+    @apply text-5xl md:text-7xl font-black bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl text-foreground/80 font-medium;
+  }
+  
+  /* Security Cards */
+  .security-card {
+    @apply bg-card/50 backdrop-blur-sm border border-border/40 rounded-xl p-6 transition-all duration-300 hover:bg-card/70 hover:border-border/60 hover:shadow-xl hover:shadow-primary/5;
+  }
+  
+  .security-card-safe {
+    @apply border-green-500/30 bg-green-500/5;
+  }
+  
+  .security-card-warning {
+    @apply border-amber-500/30 bg-amber-500/5;
+  }
+  
+  .security-card-danger {
+    @apply border-red-500/30 bg-red-500/5;
+  }
+  
+  /* Upload Zone */
+  .upload-zone {
+    @apply border-2 border-dashed border-border/40 rounded-xl p-12 text-center transition-all duration-300 hover:border-primary/50 hover:bg-primary/5 cursor-pointer;
+  }
+  
+  .upload-zone.dragover {
+    @apply border-primary bg-primary/10;
+  }
+  
+  /* Risk Meter */
+  .risk-meter {
+    @apply relative h-4 bg-muted rounded-full overflow-hidden;
+  }
+  
+  .risk-meter-fill {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+  }
+  
+  .risk-low {
+    @apply bg-gradient-to-r from-green-500 to-green-400;
+  }
+  
+  .risk-medium {
+    @apply bg-gradient-to-r from-amber-500 to-amber-400;
+  }
+  
+  .risk-high {
+    @apply bg-gradient-to-r from-red-500 to-red-400;
+  }
+  
+  /* Feature Icons */
+  .feature-icon {
+    @apply w-12 h-12 rounded-lg flex items-center justify-center text-2xl font-bold transition-all duration-300;
+  }
+  
+  .feature-icon-primary {
+    @apply bg-primary/20 text-primary;
+  }
+  
+  .feature-icon-success {
+    @apply bg-green-500/20 text-green-400;
+  }
+  
+  .feature-icon-warning {
+    @apply bg-amber-500/20 text-amber-400;
+  }
+  
+  .feature-icon-danger {
+    @apply bg-red-500/20 text-red-400;
+  }
+  
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.5; 
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
