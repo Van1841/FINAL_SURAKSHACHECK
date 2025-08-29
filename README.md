@@ -1,4 +1,4 @@
-# 🛡️ SurakshaCheck – Banking APK Detection  
+# 🛡️ SurakshaCheck – Fake Bank APK Detection  
 
 ## 📌 Overview  
 **SurakshaCheck** is a security solution designed to detect **fake and malicious banking APKs** that imitate real banking apps. With rising digital fraud, attackers often trick users into revealing sensitive information like **OTPs, passwords, and personal data**.  
