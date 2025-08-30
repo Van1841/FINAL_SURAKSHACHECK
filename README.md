@@ -1,3 +1,6 @@
+
+# NOTE : THE DEPLOYED LINK IN PPT WAS OUR FIRST TRIAL OF PROJECT AND HENCE DOESNT WORK WELL. PLEASE REFER TO THE DEPLOYED LINK OF THE GITHUB WHICH IS "https://final-surakshacheck.vercel.app/"
+
 # 🛡️ SurakshaCheck – Fake Bank APK Detection  
 
 ## 📌 Overview  
