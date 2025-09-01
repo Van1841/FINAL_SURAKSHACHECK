@@ -1,5 +1,4 @@
-
-# NOTE : THE DEPLOYED LINK IN PPT WAS OUR FIRST TRIAL OF PROJECT AND HENCE DOESNT WORK WELL. PLEASE REFER TO THE DEPLOYED LINK OF THE GITHUB WHICH IS "https://final-surakshacheck.vercel.app/"
+## NOTE : THE DEPLOYED LINK IN PPT WAS OUR FIRST TRIAL OF PROJECT AND HENCE DOESNT WORK WELL. PLEASE REFER TO THE DEPLOYED LINK OF THE GITHUB WHICH IS "https://final-surakshacheck.vercel.app/"
 
 # 🛡️ SurakshaCheck – Fake Bank APK Detection  
 
@@ -11,6 +10,10 @@ Our system provides **multi-layered detection, fraud prevention, and actionable 
 ---
 
 Test APK Files
+## note we also have androzoo apks --> this helped us develop the detector more accurately and we could work on lots of dataset.
+<img width="1428" height="754" alt="Screenshot 2025-09-01 181923" src="https://github.com/user-attachments/assets/cff13a99-39e4-4ffa-a051-78a4d2396a2b" />
+
+
 
 To evaluate the performance of our Fake Banking APK Detection system, You can test the website with the following APK samples
 https://drive.google.com/drive/folders/1G_ayd34p6qWuRINUbNNOutUhg4KQ6WnT?usp=sharing
